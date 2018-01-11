@@ -4,33 +4,52 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour {
 
-    GameObject player;
-    GameObject aggro;
-    Rigidbody2D rb2d;
-    Vector2 velocity;
-    public float speed;
+    float speed;
+    Vector2 _direction;
+    bool isReady;
+
+    void Awake()
+    {
+        speed = 5f;
+        isReady = false;
+    }
 
     // Use this for initialization
     void Start () {
-        player = GameObject.Find("Player");
-        Vector2 playerPos = player.transform.position;
 
-        velocity.x = playerPos.x;
-        velocity.y = playerPos.y;
+    }
 
+    public void SetDirection(Vector2 direction)
+    {
+        //set the direction normalized, to get an unit vector
+        _direction = direction.normalized;
 
-
-        aggro = GameObject.Find("Blue");
-        Vector2 aggroPos = aggro.transform.position;
-
-        rb2d = GetComponent<Rigidbody2D>();
-
-        //transform.position = new Vector3(aggroPos.x, aggroPos.y, 0);
+        isReady = true; // set flag to true
     }
 
     // Update is called once per frame
     void Update () {
-        Vector2 playerPos = player.transform.position;
-        transform.Translate(playerPos * speed * Time.deltaTime);
+        if (isReady)
+        {
+            //get the bullets current position
+            Vector2 position = transform.position;
+
+            // comput the bullet's new position
+            position += _direction * speed * Time.deltaTime;
+
+            //update the bullet's positone
+            transform.position = position;
+
+            // Next we need to remov the bullet from our game
+            //if bullet goes outside the screen
+
+            Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+            Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+
+            if((transform.position.x < min.x) || (transform.position.x > max.x) || (transform.position.y < min.y) || (transform.position.y > max.y))
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }
