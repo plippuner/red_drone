@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class aggro : MonoBehaviour {
     public Vector2 velocity;
-    public Bullet bullet;
+
     public GameObject go;
+    public GameObject bulletEmitter;
+    public float bulletForce;
+    public float bulletDeathTime;
 
     public Rigidbody2D rb2d;
     public GameObject player;
-    private float spd = 4;
+    //private float spd = 4;
     private int distance = 7;
 
 	// Use this for initialization
@@ -18,11 +21,10 @@ public class aggro : MonoBehaviour {
         player = GameObject.Find("Player");
 
         // X = Left to Right
-        velocity.x = 0;
+       // velocity.x = 0;
         // Y = Down to UP
-        velocity.y = 0;
+        // velocity.y = 0;
 
-        bullet = new Bullet();
     }
 	
 	// Update is called once per frame
@@ -31,16 +33,36 @@ public class aggro : MonoBehaviour {
         float playerPosX = player.transform.position.x;
         float d = playerPosX-npcPosition;
 
+
+        Debug.Log(Time.deltaTime);
         //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
         //rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
 
         // Flucht
         if (d <= distance && d >= -distance) {
-            bullet.display(velocity.x, velocity.y);
+            if (3 - Time.deltaTime >= 0)
+            {
+                shoot();
+            }
         }
         else
         {
-            // moving?
+            //gun.isFiring = false; // moving?
         }
+    }
+
+    void shoot()
+    {
+        GameObject tempBullet;
+        tempBullet = Instantiate(go, transform.position, transform.rotation);
+
+        Rigidbody2D tempRig;
+        tempRig = tempBullet.GetComponent<Rigidbody2D>();
+        Vector2 move = tempRig.transform.position;
+
+        tempRig.AddForce(player.transform.position * bulletForce);
+        //move.MoveTowards(transform.position, player.transform.position, 1000);
+
+        Destroy(tempBullet, bulletDeathTime);
     }
 }
