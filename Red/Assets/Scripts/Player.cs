@@ -5,30 +5,6 @@ using UnityEngine;
 
 
 
-class Bombe : MonoBehaviour {
-
-    float BombSizeX = 10;
-    float BombSizeY = 10;
-    float BombRoration = 0;
-    Color BombColor;
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
 public class Player : MonoBehaviour {
 
 
@@ -38,34 +14,48 @@ public class Player : MonoBehaviour {
 
     float Velocity = 0;
     Vector3 TrueVelocity;
-    float Dump = 0.01f;
+    
     bool Direction;
-    public GameObject PlayerObjekt;
 
+    //Bombe
+    int MaxBomb = 3;
+   int existingBombs = 0;
+    public GameObject BSprite;
+
+
+
+    
 
 
     // Use this for initialization
     void Start () {
-		
-	}
+
+        
+
+    }
 
     // Update is called once per frame
     void Update() {
 
-        drivter();
-        Velocity = Playerspeed;
-        transform.position = TrueVelocity;
-
-        /*       if (!Input.anyKey)
 
 
-               {
-                   Dump = 0;
-                   Velocity = 0;
-               }*/
+      //  for (int i = 0; i < MaxBomb; i++) {
 
 
+            Velocity = Playerspeed;
+            transform.position = TrueVelocity;
+        if (existingBombs <= MaxBomb)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
 
+
+            {
+                Instantiate(BSprite, transform.position, transform.rotation);
+                
+            }
+        }
+
+      //  }
 
 
         if (Input.GetKey(KeyCode.D)) {
@@ -88,50 +78,8 @@ public class Player : MonoBehaviour {
 
         }
 
+}
 
+ 
 
-        void drivter() {
-
-
-
-
-            Velocity = Velocity - Dump;
-
-            if (Velocity == 0) {
-
-
-                Dump = 0;
-            Velocity = 0;
-
-
-            }
-
-
-
-
-
-
-    }
-
-    void Bombing() {
-
-
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-
-        
-
-
-
-        }
-
-
-
-
-
-
-        }
-
-    }
-
+  
