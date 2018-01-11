@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : MonoBehaviour {
+public class aggro : MonoBehaviour {
     public Vector2 velocity;
+    public Bullet bullet;
+    public GameObject go;
 
-    private Rigidbody2D rb2d;
-    private GameObject player;
+    public Rigidbody2D rb2d;
+    public GameObject player;
     private float spd = 4;
     private int distance = 7;
 
@@ -19,6 +21,8 @@ public class NPC : MonoBehaviour {
         velocity.x = 0;
         // Y = Down to UP
         velocity.y = 0;
+
+        bullet = new Bullet();
     }
 	
 	// Update is called once per frame
@@ -28,17 +32,15 @@ public class NPC : MonoBehaviour {
         float d = playerPosX-npcPosition;
 
         //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
-        rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
+        //rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
 
         // Flucht
-        if (d < 0 && d >= -distance) {
-            velocity.x = spd;
-        } else if (d > 0 && d <= distance)
+        if (d <= distance && d >= -distance) {
+            bullet.display(velocity.x, velocity.y);
+        }
+        else
         {
-            velocity.x = -spd;
-        } else
-        {
-            velocity.x = 0;
+            // moving?
         }
     }
 }
