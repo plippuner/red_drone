@@ -5,20 +5,23 @@ using UnityEngine;
 
 
 
-public class explosion : MonoBehaviour {
+public class explosion : MonoBehaviour
+{
 
     float Health = 1f;
     float liveTimer = 1f;
-    float explosionTime = 10f;
+    float explosionTime = 15f;
     float Damage = 1;
 
     // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
 
 
         explosionTime = explosionTime - liveTimer;
@@ -33,9 +36,14 @@ public class explosion : MonoBehaviour {
     }
 
 
-    void OnTriggerEnter()
+    void OnCollisionEnter2D(Collision2D col)
     {
+        
 
-        Health = Health - Damage;
+        if (col.gameObject.tag == "Civilian")
+        {
+            Health = Health - Damage;
+            Debug.Log("kill");
+        }
     }
 }

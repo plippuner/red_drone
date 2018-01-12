@@ -44,7 +44,7 @@ public class Player : MonoBehaviour {
 
         if (!ready) {
 
-            float timer = 0.2f;
+            float timer = 0.6f;
             CurrentTime = CurrentTime - timer;
             
             if (CurrentTime <= 0) {
@@ -80,7 +80,7 @@ public class Player : MonoBehaviour {
 
 
             TrueVelocity += Velocity * Time.deltaTime;
-
+            transform.eulerAngles = new Vector3(0,0,0) ;
 
 
 
@@ -90,9 +90,9 @@ public class Player : MonoBehaviour {
             {
 
             TrueVelocity -= Velocity * Time.deltaTime;
+            transform.eulerAngles = new Vector3(0, 180, 0);
 
-
-            }
+        }
 
         }
 

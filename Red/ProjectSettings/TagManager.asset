@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Destroy
   - Ground
+  - Civilian
+  - Terrorist
   layers:
   - Default
   - TransparentFX

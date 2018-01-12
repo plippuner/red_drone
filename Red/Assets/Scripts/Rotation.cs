@@ -27,7 +27,7 @@ public class Rotation : MonoBehaviour {
 
         if (Falling)
         {
-            transform.Rotate(new Vector3(0, 0, Time.deltaTime * 80));
+            transform.Rotate(new Vector3(0, 0, Time.deltaTime * -80));
             
 
         }
@@ -54,12 +54,8 @@ public class Rotation : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D col) {
 
-       
-        Debug.Log("col");
-
-
-
-        if (col.gameObject.tag == "Ground") {
+  
+        if (col.gameObject.tag == "Ground" ||col.gameObject.tag == "Civilian" ||col.gameObject.tag == "Terrorist") {
              
 
             //Explosion.GetComponent<ParticleSystem>().enableEmission = true;
@@ -68,7 +64,7 @@ public class Rotation : MonoBehaviour {
 
 
 
-           // Destroy(gameObject);
+           //Destroy(col.gameObject);
 
         }
 

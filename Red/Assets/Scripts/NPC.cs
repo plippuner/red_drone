@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour {
     public Vector2 velocity;
-
+    float Health = 1;
     private Rigidbody2D rb2d;
     private GameObject player;
     private float spd = 4;
