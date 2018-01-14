@@ -14,7 +14,6 @@ public class explosion : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -60,12 +59,9 @@ public class explosion : MonoBehaviour
 
         if (col.gameObject.tag == "Structure" && col.gameObject.GetComponent<Structures>().destroyable)
         {
-            int enemyHealth = col.gameObject.GetComponent<Structures>().health;
-            enemyHealth = enemyHealth - 1;
+            col.gameObject.GetComponent<Structures>().health--;
 
-            Debug.Log(enemyHealth);
-
-            if (enemyHealth <= 0)
+            if (col.gameObject.GetComponent<Structures>().health <= 0)
             {
                 Destroy(col.gameObject);
             }
