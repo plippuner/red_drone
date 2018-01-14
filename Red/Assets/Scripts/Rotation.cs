@@ -55,7 +55,7 @@ public class Rotation : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D col) {
 
   
-        if (col.gameObject.tag == "Ground" ||col.gameObject.tag == "Civilian" ||col.gameObject.tag == "Terrorist") {
+        if (col.gameObject.tag == "Ground" ||col.gameObject.tag == "Civilian" ||col.gameObject.tag == "Terrorist" || col.gameObject.tag == "Structure") {
              
 
             //Explosion.GetComponent<ParticleSystem>().enableEmission = true;

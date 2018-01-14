@@ -8,8 +8,11 @@ public class aggro : MonoBehaviour
 
     private Rigidbody2D rb2d;
     private GameObject player;
-    private float spd = 2;
+    public float spd;
+    private int health;
     private int distance = 7;
+
+    private int tValue;
 
     // Use this for initialization
     void Start()
@@ -21,6 +24,9 @@ public class aggro : MonoBehaviour
         velocity.x = 0;
         // Y = Down to UP
         velocity.y = 0;
+
+        // Scoring
+        tValue = player.GetComponent<Scoring>().tValue;
     }
 
     // Update is called once per frame
@@ -50,5 +56,11 @@ public class aggro : MonoBehaviour
         {
             velocity.x = 0;
         }
+    }
+
+    private void OnDestroy()
+    {
+        Debug.Log("HolyShit!");
+        //player.ltValue += 1;
     }
 }
