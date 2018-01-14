@@ -7,9 +7,10 @@ public class Shooting : MonoBehaviour {
     public GameObject Bullet;
     float timer;
     float firerate = 0.5f;
+    public AudioClip Shot; 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 	}
 	
 	// Update is called once per frame
@@ -27,6 +28,7 @@ public class Shooting : MonoBehaviour {
         if (player != null && timer > firerate)
         {
             GameObject bullet = (GameObject)Instantiate(Bullet);
+            GetComponent<AudioSource>().PlayOneShot(Shot);
             bullet.transform.position = transform.position;
 
             Vector2 direction = player.transform.position - bullet.transform.position;

@@ -5,15 +5,18 @@ using UnityEngine.UI;
 
 public class explosion : MonoBehaviour
 {
-
     float Health = 1f;
     float liveTimer = 1f;
     float explosionTime = 15f;
     int Damage = 1;
 
+    private GameObject player;
+    public AudioClip clip;
+
     // Use this for initialization
     void Start()
     {
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
@@ -34,6 +37,7 @@ public class explosion : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        player.GetComponent<AudioSource>().PlayOneShot(clip);
 
         if (col.gameObject.tag == "Civilian")
         {

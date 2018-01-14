@@ -14,7 +14,6 @@ public class Terrorist : MonoBehaviour
 
     private int tValue;
 
-
     // Use this for initialization
     void Start()
     {
