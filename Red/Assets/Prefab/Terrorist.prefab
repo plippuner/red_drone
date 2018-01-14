@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212648049139082502}
   - component: {fileID: 61399928935390532}
   - component: {fileID: 50107220095067830}
+  - component: {fileID: 114536148693261960}
   m_Layer: 9
   m_Name: Terrorist
   m_TagString: Terrorist
@@ -66,8 +67,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1028409743050276}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.3167102, y: -3.2549741, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.018, y: -3.61, z: 0}
+  m_LocalScale: {x: 0.515182, y: 1, z: 1}
   m_Children:
   - {fileID: 4786574351870938}
   m_Father: {fileID: 0}
@@ -118,6 +119,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114536148693261960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1028409743050276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f20b97a94dd679478322a3c3d29bd32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114845713075943430
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -7,11 +7,14 @@ public class NPC : MonoBehaviour {
     float Health = 1;
     private Rigidbody2D rb2d;
     private GameObject player;
-    private float spd = 4;
+    public float spd;
+    public int health;
     private int distance = 7;
 
-	// Use this for initialization
-	void Start () {
+    private int cValue;
+
+    // Use this for initialization
+    void Start () {
         rb2d = GetComponent<Rigidbody2D>();
         player = GameObject.Find("Player");
 
@@ -33,12 +36,23 @@ public class NPC : MonoBehaviour {
         // Flucht
         if (d < 0 && d >= -distance) {
             velocity.x = spd;
+            velocity.y = -2;
         } else if (d > 0 && d <= distance)
         {
             velocity.x = -spd;
-        } else
+            velocity.y = -2;
+        }
+        else
         {
             velocity.x = 0;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (player != null)
+        {
+            player.GetComponent<Scoring>().cValue++;
         }
     }
 }
