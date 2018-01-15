@@ -56,6 +56,7 @@ public class NPC : MonoBehaviour {
         {
             velocity.x = 0;
             anim.SetBool("flucht", false);
+            transform.rotation = new Quaternion(0, 0, 0, 180);
         }
     }
 
