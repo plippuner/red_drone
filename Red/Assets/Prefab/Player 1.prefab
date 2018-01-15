@@ -21,8 +21,13 @@ GameObject:
   - component: {fileID: 4597424340708004}
   - component: {fileID: 212926854709921558}
   - component: {fileID: 114505203117663748}
+<<<<<<< HEAD
   - component: {fileID: 82432559024155204}
   - component: {fileID: 114129563304035556}
+=======
+  - component: {fileID: 82009182683902404}
+  - component: {fileID: 114875449300504622}
+>>>>>>> 259a99f2b539a25d519918a96e5803978756f5bd
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -43,7 +48,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!82 &82432559024155204
+=======
+--- !u!82 &82009182683902404
+>>>>>>> 259a99f2b539a25d519918a96e5803978756f5bd
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -123,6 +132,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+<<<<<<< HEAD
 --- !u!114 &114129563304035556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,6 +146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tValue: 0
   cValue: 0
+=======
+>>>>>>> 259a99f2b539a25d519918a96e5803978756f5bd
 --- !u!114 &114505203117663748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -148,6 +160,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BSprite: {fileID: 1197013049747246, guid: 9dd2759c13f5add4a8db2e04ba764525, type: 2}
+--- !u!114 &114875449300504622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1455997429483510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 498d12a75835061408b1379794c384b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tValue: 0
+  cValue: 0
 --- !u!212 &212926854709921558
 SpriteRenderer:
   m_ObjectHideFlags: 1
