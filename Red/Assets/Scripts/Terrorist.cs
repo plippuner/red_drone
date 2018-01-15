@@ -43,11 +43,13 @@ public class Terrorist : MonoBehaviour
         {
             gun.GetComponent<Shooting>().FireEnemyBullet();
             velocity.x = -spd;
+            GetComponent<SpriteRenderer>().flipX = false;
         }
         else if (d > 0 && d <= distance)
         {
             gun.GetComponent<Shooting>().FireEnemyBullet();
             velocity.x = spd;
+            GetComponent<SpriteRenderer>().flipX = true;
         }
         else
         {

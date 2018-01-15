@@ -6,7 +6,7 @@ public class Shooting : MonoBehaviour {
 
     public GameObject Bullet;
     float timer;
-    float firerate = 0.5f;
+    float firerate = 0.3f;
     public AudioClip Shot; 
 
     // Use this for initialization
@@ -29,7 +29,13 @@ public class Shooting : MonoBehaviour {
         {
             GameObject bullet = (GameObject)Instantiate(Bullet);
             GetComponent<AudioSource>().PlayOneShot(Shot);
-            bullet.transform.position = transform.position;
+
+            if (transform.parent.GetComponent<SpriteRenderer>().flipX == true) {
+                bullet.transform.position = transform.position + new Vector3(0.82f, 1.3f, 0);
+            } else
+            {
+                bullet.transform.position = transform.position + new Vector3(-0.82f, 1.3f, 0);
+            }
 
             Vector2 direction = player.transform.position - bullet.transform.position;
             bullet.GetComponent<Bullet>().SetDirection(direction);
