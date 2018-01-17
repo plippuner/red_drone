@@ -10,6 +10,7 @@ public class NPC : MonoBehaviour {
     public float spd;
     public int health;
     private int distance = 7;
+    Animator anim;
 
     private int cValue;
 
@@ -17,6 +18,8 @@ public class NPC : MonoBehaviour {
     void Start () {
         rb2d = GetComponent<Rigidbody2D>();
         player = GameObject.Find("Player");
+
+        anim = GetComponent<Animator>();
 
         // X = Left to Right
         velocity.x = 0;
@@ -37,14 +40,23 @@ public class NPC : MonoBehaviour {
         if (d < 0 && d >= -distance) {
             velocity.x = spd;
             velocity.y = -2;
-        } else if (d > 0 && d <= distance)
+            GetComponent<SpriteRenderer>().flipX = true;
+            transform.rotation = new Quaternion(0,0,-20, 180);
+            anim.SetBool("flucht", true);
+        }
+        else if (d > 0 && d <= distance)
         {
             velocity.x = -spd;
             velocity.y = -2;
+            GetComponent<SpriteRenderer>().flipX = false;
+            transform.rotation = new Quaternion(0, 0,20, 180);
+            anim.SetBool("flucht", true);
         }
         else
         {
             velocity.x = 0;
+            anim.SetBool("flucht", false);
+            transform.rotation = new Quaternion(0, 0, 0, 180);
         }
     }
 
