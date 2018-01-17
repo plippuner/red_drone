@@ -14,7 +14,7 @@ public class LockOn : MonoBehaviour
 
     private void Start()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
         target = player.GetComponent<Transform>();
     }
 

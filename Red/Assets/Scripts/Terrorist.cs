@@ -31,7 +31,7 @@ public class Terrorist : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        player = GameObject.Find("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
 
         transform.Find("Canvas").GetComponent<Canvas>().enabled = false;
         // X = Left to Right
