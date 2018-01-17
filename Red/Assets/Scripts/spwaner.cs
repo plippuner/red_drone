@@ -5,25 +5,28 @@ using UnityEngine;
 public class spwaner : MonoBehaviour {
 
 
+    private GameObject player;
+
+
+     void Start()
+    {
+        player = (GameObject.FindGameObjectWithTag("Player"));
+    }
+
+   
 	
 	// Update is called once per frame
 	void Update () {
 
-        if () { }
-player = (GameObject.FindGameObjectWithTag("Player"));
 
-DontDestroyOnLoad(gameObject);
-
-if (GameObject.FindGameObjectWithTag("Player") != null)
+if (GameObject.FindGameObjectWithTag("Player") == null)
 {
-    Destroy(gameObject);
+            if (Input.GetKey(KeyCode.KeypadEnter)) { }
+            Instantiate(player, transform.position, transform.rotation);
+           
 
 }
-else {
 
-    Instantiate(player, transform.position, transform.rotation);
-
-}
 
     }
 }
