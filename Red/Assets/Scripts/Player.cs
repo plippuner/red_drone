@@ -62,25 +62,7 @@ public class Player : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
-        
-        /*
-        player = (GameObject.FindGameObjectWithTag("Player"));
-
         DontDestroyOnLoad(gameObject);
-
-        if (GameObject.FindGameObjectWithTag("Player") != null)
-        {
-            Destroy(gameObject);
-
-        }
-       else {
-
-            Instantiate(player, transform.position, transform.rotation);
-
-        }*/
-        
-
 
 
         //saveAction = new SaveAction[101];
