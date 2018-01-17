@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 
 
     float PlayerPosXS = 0;
-    float PlayerPosYS = 0;
+    float PlayerPosYS = 3;
     bool SpawndAtStart = true;
 
     int PlayerAmount = 1;
@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     float Velocity = 0;
     float TrueVelocity;
 
-    bool Direction;
+    bool Direction = true;
     bool ready = true;
     float MaxTime = 10;
     int Maxlist = 0;
@@ -72,9 +72,20 @@ public class Player : MonoBehaviour
 
     // Update is called once per frame
     void Update()
- {
+    {
 
-        Debug.Log("PlayerAmount");
+        if(Direction){
+
+            TrueVelocity += Velocity * Time.deltaTime/2;
+
+        }
+        else{
+
+            TrueVelocity -= Velocity * Time.deltaTime /2;
+
+        }
+
+        
 
 
 
@@ -105,14 +116,14 @@ public class Player : MonoBehaviour
 
             transform.position = new Vector3(PlayerPosXS, PlayerPosYS, 0);
             TrueVelocity = 0;
-            saveAction.Add("None");
+            saveAction.Add("fin");
             saveTime.Add(Playtime);
             pos.Add(transform.position);
             Recording = !Recording;
             Playtime = 0;
             
             SpawndAtStart = false;
-            SceneManager.LoadScene("Pascal");
+            SceneManager.LoadScene("red");
         }
 
         if (Recording)
@@ -173,7 +184,7 @@ public class Player : MonoBehaviour
 
             if (Input.GetKey(KeyCode.D))
             {
-
+                Direction = true;
                 TrueVelocity += Velocity * Time.deltaTime;
                 transform.eulerAngles = new Vector3(0, 0, 0);
 
@@ -196,14 +207,15 @@ public class Player : MonoBehaviour
             {
                 TrueVelocity -= Velocity * Time.deltaTime;
                 transform.eulerAngles = new Vector3(0, 180, 0);
-               // if (TimeReady)
-               // {
-                    saveAction.Add("A");
+
+
+                Direction = false;
+                saveAction.Add("A");
                     saveTime.Add(Playtime);
                     pos.Add(transform.position);
                     Maxlist++;
-                  //  TimeReady = false;
-               // }
+              
+            
             }
         }
        if (!Recording)
@@ -214,18 +226,24 @@ public class Player : MonoBehaviour
 
                 for (int i = 0; i < Maxlist; i++)
                 {
+                
+
+
+                  
+                
 
                     if (saveTime[i] <= Playtime + 0.01f&& saveTime[i] >= Playtime - 0.01)
                     {
                         Debug.Log("Time");
+                    if (saveAction[i] == ("fin")) { Debug.Log("fin"); }
 
-                        if (saveAction[i] == ("A"))
+                    if (saveAction[i] == ("A"))
                         {
 
 
                          Debug.Log("A");
-                        //transform.position = pos[i];
-                         TrueVelocity -= Velocity * Time.deltaTime;
+                        Direction = false;
+                        TrueVelocity -= Velocity * Time.deltaTime;
                         transform.eulerAngles = new Vector3(0, 180, 0);
 
 
@@ -234,7 +252,7 @@ public class Player : MonoBehaviour
                         {
 
                          Debug.Log("D");
-                        //transform.position = pos[i];
+                        Direction = true;
                         TrueVelocity += Velocity * Time.deltaTime;
                         transform.eulerAngles = new Vector3(0, 0, 0);
 
