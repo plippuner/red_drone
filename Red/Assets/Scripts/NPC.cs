@@ -9,7 +9,7 @@ public class NPC : MonoBehaviour {
     private GameObject player;
     public float spd;
     public int health;
-    private int distance = 7;
+    private int distance = 12;
     Animator anim;
 
     private int cValue;

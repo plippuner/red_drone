@@ -11,7 +11,7 @@ public class Terrorist : MonoBehaviour
     private GameObject player;
     public float spd;
     public int health;
-    private int distance = 7;
+    private int distance = 12;
 
     public List<string> negText = new List<string>();
     public List<string> posText = new List<string>();
@@ -37,7 +37,7 @@ public class Terrorist : MonoBehaviour
         // X = Left to Right
         velocity.x = 0;
         // Y = Down to UP
-        velocity.y = 0;
+        velocity.y = -2;
     }
 
     // Update is called once per frame
@@ -96,18 +96,18 @@ public class Terrorist : MonoBehaviour
             if (d < 0 && d >= -distance)
             {
                 gun.GetComponent<Shooting>().FireEnemyBullet();
-                velocity.x = -spd;
+               // velocity.x = -spd;
                 GetComponent<SpriteRenderer>().flipX = false;
             }
             else if (d > 0 && d <= distance)
             {
                 gun.GetComponent<Shooting>().FireEnemyBullet();
-                velocity.x = spd;
+               // velocity.x = spd;
                 GetComponent<SpriteRenderer>().flipX = true;
             }
             else
             {
-                velocity.x = 0;
+               // velocity.x = 0;
             }
 
     }
