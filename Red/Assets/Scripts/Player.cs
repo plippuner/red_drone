@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
 
 
     public int Killamount = 0;
+
+    float RealTime = 0;
     
 
     float PlayerPosXS = 0;
@@ -36,6 +38,8 @@ public class Player : MonoBehaviour
 
     bool Direction = true;
     bool ready = true;
+    bool RePlay = false;
+
     float MaxTime = 10;
     int Maxlist = 0;
     float CurrentTime = 0;
@@ -77,7 +81,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Killamount);
+        //Debug.Log(RealTime);
+        Debug.Log(RePlay);
+
+
+
+       // Debug.Log(Killamount);
         Killamount = GetComponent<Scoring>().tValue;
 
         if (Direction){
@@ -117,27 +126,27 @@ public class Player : MonoBehaviour
 
 
 
-        if (/*Input.GetKeyDown(KeyCode.P)*/Killamount >= 10)
-        {
 
-            transform.position = new Vector3(PlayerPosXS, PlayerPosYS, 0);
-            TrueVelocity = 0;
-            //saveAction.Add("fin");
-            saveTime.Add(100);
-            pos.Add(transform.position);
-            
-            Playtime = 0;
-            GetComponent<Scoring>().tValue = 0;
-            GetComponent<Scoring>().cValue = 0;
-            Killamount = 0;
-            Recording = false;
-            
-            SceneManager.LoadScene("Replay");
-        }
 
         if (Recording)
         {
 
+
+            if (Killamount >= 10)
+            {
+
+                transform.position = new Vector3(PlayerPosXS, PlayerPosYS, 0);
+                TrueVelocity = 0;
+                pos.Add(transform.position);
+                RealTime = Playtime;
+                Playtime = 0;
+                GetComponent<Scoring>().tValue = 0;
+                GetComponent<Scoring>().cValue = 0;
+                Killamount = 0;
+                Recording = false;
+
+                // SceneManager.LoadScene("Replay");
+            }
 
             if (!ready)
             {
@@ -227,24 +236,61 @@ public class Player : MonoBehaviour
             
             }
         }
-       if (!Recording)
+
+        if (!Recording && !RePlay) {
+            Time.timeScale = 0;
+            GameObject.Find("Player 2/Score/Pause").SetActive(true);
+            if (Input.GetKey("return"))
+            {
+                RePlay = true;
+                GameObject.Find("Player 2/Score/Pause").SetActive(false);
+                SceneManager.LoadScene("Replay");
+                Time.timeScale = 1;
+                
+            }
+                
+
+
+        }
+
+
+       if (!Recording && RePlay)
             {
 
+            GameObject.Find("Player 2/Score/Return").SetActive(true);
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                Destroy(gameObject);
+                SceneManager.LoadScene("Menu");
+            }
 
-                Debug.Log("Play");
 
-                for (int i = 0; i < Maxlist; i++)
+            Debug.Log(RealTime);
+
+
+            if (Playtime >= RealTime || Killamount >= 10)
+            {
+                transform.position = new Vector3(PlayerPosXS, PlayerPosYS, 0);
+                TrueVelocity = 0;
+                Playtime = 0;
+                GetComponent<Scoring>().tValue = 0;
+                GetComponent<Scoring>().cValue = 0;
+                Killamount = 0;
+                SceneManager.LoadScene("Replay");
+
+
+
+               
+
+
+
+            }
+
+            for (int i = 0; i < Maxlist; i++)
                 {
 
 
-                if (saveTime[i] == saveTime[100])
-                {
-                    Debug.Log("fin");
-                    SceneManager.LoadScene("Menu");
-
-
-
-                }
+  
 
 
 

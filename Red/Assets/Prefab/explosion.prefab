@@ -38,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1468053623230012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.3458824, y: -1.9753947, z: 0.116491556}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalPosition: {x: 324.63544, y: 43.180702, z: 0.116491556}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -58,7 +58,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.25
 --- !u!114 &114523480632340900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -131,7 +131,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1281064534
+  randomSeed: -1503629380
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3492,7 +3492,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c3b9eb683f90fc247a234236c3bab2bd, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -3565,7 +3565,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 61273e6220606024aa7123d3f6fdea7a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d370e6de9007a4449bdc2f61ac16bd2d, type: 3}
   m_Color: {r: 0, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
