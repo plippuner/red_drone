@@ -51,6 +51,9 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
 --- !u!1 &1584242843817178
 =======
 --- !u!1 &1071370391624840
@@ -111,9 +114,6 @@ GameObject:
 =======
 --- !u!1 &1627750217338018
 >>>>>>> parent of 3d0aa21... replay3
-=======
---- !u!1 &1584242843817178
->>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -153,6 +153,9 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
 --- !u!1 &1855520557774208
 =======
 --- !u!1 &1855483615499050
@@ -197,9 +200,6 @@ GameObject:
 =======
 --- !u!1 &1949749563554140
 >>>>>>> parent of 3d0aa21... replay3
-=======
---- !u!1 &1855520557774208
->>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -228,9 +228,6 @@ Transform:
   m_Children: []
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
   m_Father: {fileID: 4982878416809534}
 =======
   m_Father: {fileID: 4972897336316328}
@@ -239,6 +236,10 @@ Transform:
 =======
 >>>>>>> parent of 4084da0... Dialogue
   m_RootOrder: 1
+=======
+  m_Father: {fileID: 4972897336316328}
+  m_RootOrder: 2
+>>>>>>> 204d178af3d3d100009d4196cea60da40645679b
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4561678854971228
 Transform:
@@ -251,14 +252,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
   m_Children:
   - {fileID: 4607648752102744}
   m_Father: {fileID: 4982878416809534}
   m_RootOrder: 2
-<<<<<<< HEAD
 =======
   m_Children: []
   m_Father: {fileID: 4972897336316328}
@@ -270,11 +267,14 @@ Transform:
   m_Father: {fileID: 4972897336316328}
   m_RootOrder: 0
 >>>>>>> parent of 3d0aa21... replay3
+<<<<<<< HEAD
 =======
 >>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
 =======
   m_RootOrder: 0
 >>>>>>> parent of 4084da0... Dialogue
+=======
+>>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4653367115120282
 Transform:
@@ -300,7 +300,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_Children: []
   m_Father: {fileID: 4982878416809534}
   m_RootOrder: 0
@@ -317,6 +316,7 @@ Transform:
   m_Father: {fileID: 4972897336316328}
   m_RootOrder: 2
 >>>>>>> parent of 3d0aa21... replay3
+<<<<<<< HEAD
 =======
   m_Children: []
   m_Father: {fileID: 4982878416809534}
@@ -325,6 +325,8 @@ Transform:
 =======
   m_RootOrder: 2
 >>>>>>> parent of 4084da0... Dialogue
+=======
+>>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4972897336316328
 Transform:
@@ -340,6 +342,9 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
   - {fileID: 4635645386836000}
   - {fileID: 4497500130837912}
   - {fileID: 4584504292982180}
@@ -356,11 +361,6 @@ Transform:
   - {fileID: 4401704405211686}
   - {fileID: 4786574351870938}
 >>>>>>> parent of 3d0aa21... replay3
-=======
-  - {fileID: 4635645386836000}
-  - {fileID: 4497500130837912}
-  - {fileID: 4584504292982180}
->>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -493,6 +493,9 @@ AudioSource:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
 --- !u!114 &114363116977265378
 =======
 --- !u!114 &114173992696495728
@@ -568,9 +571,6 @@ MonoBehaviour:
 =======
 --- !u!114 &114314552776627250
 >>>>>>> parent of 3d0aa21... replay3
-=======
---- !u!114 &114363116977265378
->>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -613,6 +613,9 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
 --- !u!114 &114686643340195810
 =======
   negText:
@@ -630,9 +633,6 @@ MonoBehaviour:
 =======
 --- !u!114 &114654080100851712
 >>>>>>> parent of 3d0aa21... replay3
-=======
---- !u!114 &114686643340195810
->>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -647,13 +647,15 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
+=======
+>>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
   player: {fileID: 0}
   target: {fileID: 0}
   enemyAimSpeed: 5
 --- !u!114 &114740053122330290
-<<<<<<< HEAD
 =======
 --- !u!114 &114660719045514712
 MonoBehaviour:
@@ -683,8 +685,6 @@ MonoBehaviour:
 =======
 --- !u!114 &114716211716542196
 >>>>>>> parent of 3d0aa21... replay3
-=======
->>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -697,7 +697,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
   Bullet: {fileID: 1259159922407420, guid: 8e1f07fbf461ef449b6f97b21afe43d0, type: 2}
   Shot: {fileID: 8300000, guid: f2b162aa8bcb5424abf826782ee3a95a, type: 3}
 --- !u!114 &114891874437516894
@@ -713,11 +712,6 @@ MonoBehaviour:
   enemyAimSpeed: 5
 --- !u!114 &114845713075943430
 >>>>>>> parent of 3d0aa21... replay3
-=======
-  Bullet: {fileID: 1259159922407420, guid: 8e1f07fbf461ef449b6f97b21afe43d0, type: 2}
-  Shot: {fileID: 8300000, guid: f2b162aa8bcb5424abf826782ee3a95a, type: 3}
---- !u!114 &114891874437516894
->>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -730,7 +724,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!212 &212374802665472428
 =======
   Bullet: {fileID: 1259159922407420, guid: 8e1f07fbf461ef449b6f97b21afe43d0, type: 2}
@@ -742,9 +735,6 @@ MonoBehaviour:
   Shot: {fileID: 8300000, guid: f2b162aa8bcb5424abf826782ee3a95a, type: 3}
 --- !u!212 &212080994605391146
 >>>>>>> parent of 3d0aa21... replay3
-=======
---- !u!212 &212374802665472428
->>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -964,3 +954,141 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!222 &222035194576968802
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1570493509993576}
+--- !u!222 &222309139572469054
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1288260765618656}
+--- !u!222 &222720706023632548
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1071370391624840}
+--- !u!222 &222994432616205564
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1855483615499050}
+--- !u!223 &223493581615719946
+Canvas:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1917499134873598}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 796755691
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &224179615173487214
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1570493509993576}
+  m_LocalRotation: {x: -0, y: -0, z: 0.052093208, w: 0.99864227}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224515823929457690}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.972}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.0929, y: 0.531}
+  m_SizeDelta: {x: -1.0005, y: -1.8186}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224363093704452504
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1288260765618656}
+  m_LocalRotation: {x: -0, y: -0, z: 0.054857686, w: 0.9984942}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 224515823929457690}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.2890005}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.049, y: 0.537}
+  m_SizeDelta: {x: 118.9547, y: 30}
+  m_Pivot: {x: 0.50000006, y: 0.49999988}
+--- !u!224 &224440037029489548
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1855483615499050}
+  m_LocalRotation: {x: -0, y: -0, z: 0.054857686, w: 0.9984942}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224515823929457690}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.2890005}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0542, y: 0.5373}
+  m_SizeDelta: {x: 118.9547, y: 30}
+  m_Pivot: {x: 0.50000006, y: 0.49999988}
+--- !u!224 &224515823929457690
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1917499134873598}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.6571428, y: 1.6571428, z: 1.16}
+  m_Children:
+  - {fileID: 224729310750409622}
+  - {fileID: 224179615173487214}
+  - {fileID: 224440037029489548}
+  - {fileID: 224363093704452504}
+  m_Father: {fileID: 4972897336316328}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.08, y: 1.35}
+  m_SizeDelta: {x: 3.666, y: 2.515}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224729310750409622
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1071370391624840}
+  m_LocalRotation: {x: -0, y: -0, z: 0.34406197, w: -0.93894696}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224515823929457690}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -40.249}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.013, y: 0.209}
+  m_SizeDelta: {x: -3.4212, y: -2.2798}
+  m_Pivot: {x: 0.5, y: 0.5}

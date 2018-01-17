@@ -21,7 +21,7 @@ TagManager:
   - Foreground
   - Middleground
   - Background
-  - 
+  - Red
   - 
   - 
   - 
@@ -45,4 +45,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3022140345
+    locked: 0
+  - name: Foreground
+    uniqueID: 1769791091
+    locked: 0
+  - name: Red
+    uniqueID: 796755691
     locked: 0

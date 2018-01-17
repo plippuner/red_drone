@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Terrorist : MonoBehaviour
 {
@@ -12,7 +13,19 @@ public class Terrorist : MonoBehaviour
     public int health;
     private int distance = 7;
 
+    public List<string> negText = new List<string>();
+    public List<string> posText = new List<string>();
+
+    private Text redText;
+    private Text blueText;
+
     private int tValue;
+    private int textInt;
+
+    private float textRate = 3f;
+    private float stop = 2f;
+
+    private bool random = true;
 
     // Use this for initialization
     void Start()
@@ -20,6 +33,7 @@ public class Terrorist : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         player = GameObject.Find("Player");
 
+        transform.Find("Canvas").GetComponent<Canvas>().enabled = false;
         // X = Left to Right
         velocity.x = 0;
         // Y = Down to UP
@@ -41,13 +55,15 @@ public class Terrorist : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
+=======
+>>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
             //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
             rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
             GameObject gun = transform.Find("EnemyGun").gameObject;
 
-<<<<<<< HEAD
 =======
         redText = transform.Find("Canvas/redText").GetComponent<Text>();
         blueText = transform.Find("Canvas/blueText").GetComponent<Text>();
@@ -117,8 +133,6 @@ public class Terrorist : MonoBehaviour
         }
     }
 >>>>>>> 204d178af3d3d100009d4196cea60da40645679b
-=======
->>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
 
             // Flucht
             if (d < 0 && d >= -distance)
