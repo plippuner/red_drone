@@ -40,7 +40,6 @@ public class Terrorist : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
             //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
@@ -88,8 +87,6 @@ public class Terrorist : MonoBehaviour
             velocity.x = 0;
         }
 
-=======
->>>>>>> parent of 4084da0... Dialogue
 
 =======
 
@@ -99,19 +96,14 @@ public class Terrorist : MonoBehaviour
         {
             gun.GetComponent<Shooting>().FireEnemyBullet();
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
             velocity.x = -spd;
 >>>>>>> parent of 3d0aa21... replay3
-=======
-            velocity.x = -spd;
->>>>>>> parent of 4084da0... Dialogue
             GetComponent<SpriteRenderer>().flipX = false;
         }
         else if (d > 0 && d <= distance)
         {
             gun.GetComponent<Shooting>().FireEnemyBullet();
-<<<<<<< HEAD
 <<<<<<< HEAD
             GetComponent<SpriteRenderer>().flipX = true;
         }
@@ -139,8 +131,6 @@ public class Terrorist : MonoBehaviour
             }
         
 =======
-=======
->>>>>>> parent of 4084da0... Dialogue
             velocity.x = spd;
             GetComponent<SpriteRenderer>().flipX = true;
         }
@@ -148,10 +138,7 @@ public class Terrorist : MonoBehaviour
         {
             velocity.x = 0;
         }
-<<<<<<< HEAD
 >>>>>>> parent of 3d0aa21... replay3
-=======
->>>>>>> parent of 4084da0... Dialogue
     }
 
     private void OnDestroy()
