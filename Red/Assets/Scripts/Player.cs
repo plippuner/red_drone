@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
@@ -58,7 +59,7 @@ public class Player : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        DontDestroyOnLoad(gameObject);
 
         //saveAction = new SaveAction[101];
         CurrentTime = MaxTime;
@@ -100,6 +101,7 @@ public class Player : MonoBehaviour
             pos.Add(transform.position);
             Recording = !Recording;
             Playtime = 0;
+            SceneManager.LoadScene("Pascal");
         }
 
         if (Recording)
