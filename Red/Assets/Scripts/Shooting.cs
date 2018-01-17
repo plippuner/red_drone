@@ -21,7 +21,7 @@ public class Shooting : MonoBehaviour {
     // Function to firen
     public void FireEnemyBullet()
     {
-        GameObject player = GameObject.Find("Player");
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
 
         timer += Time.deltaTime;
 
