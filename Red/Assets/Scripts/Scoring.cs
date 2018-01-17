@@ -16,11 +16,11 @@ public class Scoring : MonoBehaviour {
     // Use this for initialization
     void Start () {
         tValue = 0;
-        tScore = GameObject.Find("Score/tScore");
+        tScore = GameObject.Find("Player 2/Score/tScore");
         tText = tScore.GetComponent<Text>();
 
         cValue = 0;
-        tScore = GameObject.Find("Score/cScore");
+        tScore = GameObject.Find("Player 2/Score/cScore");
         cText = tScore.GetComponent<Text>();
     }
 	
