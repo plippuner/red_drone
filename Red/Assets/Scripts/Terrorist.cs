@@ -29,39 +29,40 @@ public class Terrorist : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float npcPosition = rb2d.position.x;
-        float playerPosX = player.transform.position.x;
-        float d = playerPosX - npcPosition;
 
-        //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
-        rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
-        GameObject gun = transform.Find("EnemyGun").gameObject;
+            float npcPosition = rb2d.position.x;
+            float playerPosX = player.transform.position.x;
+            float d = playerPosX - npcPosition;
+
+            //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
+            rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
+            GameObject gun = transform.Find("EnemyGun").gameObject;
 
 
-        // Flucht
-        if (d < 0 && d >= -distance)
-        {
-            gun.GetComponent<Shooting>().FireEnemyBullet();
-            velocity.x = -spd;
-            GetComponent<SpriteRenderer>().flipX = false;
-        }
-        else if (d > 0 && d <= distance)
-        {
-            gun.GetComponent<Shooting>().FireEnemyBullet();
-            velocity.x = spd;
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
-        else
-        {
-            velocity.x = 0;
-        }
+            // Flucht
+            if (d < 0 && d >= -distance)
+            {
+                gun.GetComponent<Shooting>().FireEnemyBullet();
+                velocity.x = -spd;
+                GetComponent<SpriteRenderer>().flipX = false;
+            }
+            else if (d > 0 && d <= distance)
+            {
+                gun.GetComponent<Shooting>().FireEnemyBullet();
+                velocity.x = spd;
+                GetComponent<SpriteRenderer>().flipX = true;
+            }
+            else
+            {
+                velocity.x = 0;
+            }
+        
     }
-
-    private void OnDestroy()
-    {
-        if (player != null)
+        private void OnDestroy()
         {
-            player.GetComponent<Scoring>().tValue++;
+            if (player != null)
+            {
+                player.GetComponent<Scoring>().tValue++;
+            }
         }
-    }
-}
+    } 
