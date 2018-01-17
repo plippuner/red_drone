@@ -51,23 +51,10 @@ public class Terrorist : MonoBehaviour
         rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
         GameObject gun = transform.Find("EnemyGun").gameObject;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> caa0b63f1fa74c7d3c2a9a84d9658667309af0c0
-=======
->>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
-=======
->>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
-            //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
+
             rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
             GameObject gun = transform.Find("EnemyGun").gameObject;
 
-=======
         redText = transform.Find("Canvas/redText").GetComponent<Text>();
         blueText = transform.Find("Canvas/blueText").GetComponent<Text>();
 
@@ -108,27 +95,6 @@ public class Terrorist : MonoBehaviour
         }
 
 
-=======
-
->>>>>>> parent of 3d0aa21... replay3
-        // Flucht
-        if (d < 0 && d >= -distance)
-        {
-            gun.GetComponent<Shooting>().FireEnemyBullet();
-<<<<<<< HEAD
-=======
-            velocity.x = -spd;
->>>>>>> parent of 3d0aa21... replay3
-            GetComponent<SpriteRenderer>().flipX = false;
-        }
-        else if (d > 0 && d <= distance)
-        {
-            gun.GetComponent<Shooting>().FireEnemyBullet();
-<<<<<<< HEAD
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
-    }
->>>>>>> 204d178af3d3d100009d4196cea60da40645679b
 
             // Flucht
             if (d < 0 && d >= -distance)
@@ -147,16 +113,7 @@ public class Terrorist : MonoBehaviour
             {
                 velocity.x = 0;
             }
-        
-=======
-            velocity.x = spd;
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
-        else
-        {
-            velocity.x = 0;
-        }
->>>>>>> parent of 3d0aa21... replay3
+
     }
 
     private void OnDestroy()
