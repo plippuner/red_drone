@@ -52,8 +52,11 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
+=======
+>>>>>>> caa0b63f1fa74c7d3c2a9a84d9658667309af0c0
 --- !u!1 &1584242843817178
 =======
 --- !u!1 &1071370391624840
@@ -107,8 +110,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-=======
->>>>>>> parent of 4084da0... Dialogue
 --- !u!1 &1627750217338018
 >>>>>>> 204d178af3d3d100009d4196cea60da40645679b
 =======
@@ -154,8 +155,11 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
+=======
+>>>>>>> caa0b63f1fa74c7d3c2a9a84d9658667309af0c0
 --- !u!1 &1855520557774208
 =======
 --- !u!1 &1855483615499050
@@ -193,8 +197,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-=======
->>>>>>> parent of 4084da0... Dialogue
 --- !u!1 &1949749563554140
 >>>>>>> 204d178af3d3d100009d4196cea60da40645679b
 =======
@@ -231,10 +233,7 @@ Transform:
   m_Father: {fileID: 4982878416809534}
 =======
   m_Father: {fileID: 4972897336316328}
-<<<<<<< HEAD
 >>>>>>> parent of 3d0aa21... replay3
-=======
->>>>>>> parent of 4084da0... Dialogue
   m_RootOrder: 1
 =======
   m_Father: {fileID: 4972897336316328}
@@ -259,7 +258,6 @@ Transform:
 =======
   m_Children: []
   m_Father: {fileID: 4972897336316328}
-<<<<<<< HEAD
   m_RootOrder: 1
 >>>>>>> 204d178af3d3d100009d4196cea60da40645679b
 =======
@@ -270,11 +268,14 @@ Transform:
 <<<<<<< HEAD
 =======
 >>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
+<<<<<<< HEAD
 =======
   m_RootOrder: 0
 >>>>>>> parent of 4084da0... Dialogue
 =======
 >>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
+=======
+>>>>>>> caa0b63f1fa74c7d3c2a9a84d9658667309af0c0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4653367115120282
 Transform:
@@ -307,7 +308,6 @@ Transform:
   m_Children:
   - {fileID: 4653367115120282}
   m_Father: {fileID: 4972897336316328}
-<<<<<<< HEAD
   m_RootOrder: 3
 >>>>>>> 204d178af3d3d100009d4196cea60da40645679b
 =======
@@ -322,11 +322,14 @@ Transform:
   m_Father: {fileID: 4982878416809534}
   m_RootOrder: 0
 >>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
+<<<<<<< HEAD
 =======
   m_RootOrder: 2
 >>>>>>> parent of 4084da0... Dialogue
 =======
 >>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
+=======
+>>>>>>> caa0b63f1fa74c7d3c2a9a84d9658667309af0c0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4972897336316328
 Transform:
@@ -343,15 +346,16 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
+=======
+>>>>>>> caa0b63f1fa74c7d3c2a9a84d9658667309af0c0
   - {fileID: 4635645386836000}
   - {fileID: 4497500130837912}
   - {fileID: 4584504292982180}
 =======
   - {fileID: 224515823929457690}
-=======
->>>>>>> parent of 4084da0... Dialogue
   - {fileID: 4561678854971228}
   - {fileID: 4401704405211686}
   - {fileID: 4786574351870938}
@@ -494,8 +498,11 @@ AudioSource:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
+=======
+>>>>>>> caa0b63f1fa74c7d3c2a9a84d9658667309af0c0
 --- !u!114 &114363116977265378
 =======
 --- !u!114 &114173992696495728
@@ -564,8 +571,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: test
-=======
->>>>>>> parent of 4084da0... Dialogue
 --- !u!114 &114314552776627250
 >>>>>>> 204d178af3d3d100009d4196cea60da40645679b
 =======
@@ -614,8 +619,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of df96467... Revert "Merge branch 'master' of https://github.com/plippuner/red_drone"
+=======
+>>>>>>> caa0b63f1fa74c7d3c2a9a84d9658667309af0c0
 --- !u!114 &114686643340195810
 =======
   negText:
@@ -626,8 +634,6 @@ MonoBehaviour:
   - Think about the Children.
   - All we want is peace.
   - Stop! You are killing civilians!
-=======
->>>>>>> parent of 4084da0... Dialogue
 --- !u!114 &114654080100851712
 >>>>>>> 204d178af3d3d100009d4196cea60da40645679b
 =======
@@ -648,6 +654,9 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> caa0b63f1fa74c7d3c2a9a84d9658667309af0c0
 =======
 >>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
 =======
@@ -678,8 +687,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-=======
->>>>>>> parent of 4084da0... Dialogue
 --- !u!114 &114716211716542196
 >>>>>>> 204d178af3d3d100009d4196cea60da40645679b
 =======
@@ -704,6 +711,33 @@ MonoBehaviour:
   player: {fileID: 0}
   target: {fileID: 0}
   enemyAimSpeed: 5
+--- !u!114 &114765423832628050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1570493509993576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 61273e6220606024aa7123d3f6fdea7a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!114 &114845713075943430
 >>>>>>> 204d178af3d3d100009d4196cea60da40645679b
 =======
@@ -728,6 +762,49 @@ MonoBehaviour:
 =======
   Bullet: {fileID: 1259159922407420, guid: 8e1f07fbf461ef449b6f97b21afe43d0, type: 2}
   Shot: {fileID: 8300000, guid: f2b162aa8bcb5424abf826782ee3a95a, type: 3}
+--- !u!114 &114920095675734486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1917499134873598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &114987557633671676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1071370391624840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 61273e6220606024aa7123d3f6fdea7a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!212 &212080994605391146
 >>>>>>> 204d178af3d3d100009d4196cea60da40645679b
 =======

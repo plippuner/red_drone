@@ -56,6 +56,9 @@ public class Terrorist : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> caa0b63f1fa74c7d3c2a9a84d9658667309af0c0
 =======
 >>>>>>> parent of f9ab51a... Merge branch 'master' of https://github.com/plippuner/red_drone
 =======
@@ -104,8 +107,6 @@ public class Terrorist : MonoBehaviour
             velocity.x = 0;
         }
 
-=======
->>>>>>> parent of 4084da0... Dialogue
 
 =======
 
@@ -115,19 +116,14 @@ public class Terrorist : MonoBehaviour
         {
             gun.GetComponent<Shooting>().FireEnemyBullet();
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
             velocity.x = -spd;
 >>>>>>> parent of 3d0aa21... replay3
-=======
-            velocity.x = -spd;
->>>>>>> parent of 4084da0... Dialogue
             GetComponent<SpriteRenderer>().flipX = false;
         }
         else if (d > 0 && d <= distance)
         {
             gun.GetComponent<Shooting>().FireEnemyBullet();
-<<<<<<< HEAD
 <<<<<<< HEAD
             GetComponent<SpriteRenderer>().flipX = true;
         }
@@ -153,8 +149,6 @@ public class Terrorist : MonoBehaviour
             }
         
 =======
-=======
->>>>>>> parent of 4084da0... Dialogue
             velocity.x = spd;
             GetComponent<SpriteRenderer>().flipX = true;
         }
@@ -162,10 +156,7 @@ public class Terrorist : MonoBehaviour
         {
             velocity.x = 0;
         }
-<<<<<<< HEAD
 >>>>>>> parent of 3d0aa21... replay3
-=======
->>>>>>> parent of 4084da0... Dialogue
     }
 
     private void OnDestroy()
