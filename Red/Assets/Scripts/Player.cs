@@ -20,13 +20,15 @@ public class Player : MonoBehaviour
 
     float PlayerPosXS = 0;
     float PlayerPosYS = 0;
+    bool SpawndAtStart = true;
 
+    int PlayerAmount = 1;
 
     int CurrentAction = 0;
     public bool Recording = true;
     public float Playtime = 0;
 
-    float Playerspeed = 4;
+    float Playerspeed = 10;
 
     float Velocity = 0;
     float TrueVelocity;
@@ -46,6 +48,7 @@ public class Player : MonoBehaviour
     int MaxBomb = 3;
     int existingBombs = 0;
     public GameObject BSprite;
+    private GameObject player;
 
 
     //array
@@ -59,7 +62,26 @@ public class Player : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        
+        
+        /*
+        player = (GameObject.FindGameObjectWithTag("Player"));
+
         DontDestroyOnLoad(gameObject);
+
+        if (GameObject.FindGameObjectWithTag("Player") != null)
+        {
+            Destroy(gameObject);
+
+        }
+       else {
+
+            Instantiate(player, transform.position, transform.rotation);
+
+        }*/
+        
+
+
 
         //saveAction = new SaveAction[101];
         CurrentTime = MaxTime;
@@ -68,10 +90,15 @@ public class Player : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+ {
+
+        Debug.Log("PlayerAmount");
+
+
+
         if (!TimeReady)
         {
-
+            
             countdown = 1f;
             TT = TT - countdown;
 
@@ -101,6 +128,8 @@ public class Player : MonoBehaviour
             pos.Add(transform.position);
             Recording = !Recording;
             Playtime = 0;
+            
+            SpawndAtStart = false;
             SceneManager.LoadScene("Pascal");
         }
 
