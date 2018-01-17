@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Structures : MonoBehaviour {
 
-    public Sprite sprite;
-
     public int health;
     public bool destroyable;
 
