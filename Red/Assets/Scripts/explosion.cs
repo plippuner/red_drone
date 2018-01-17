@@ -65,6 +65,11 @@ public class explosion : MonoBehaviour
         {
             col.gameObject.GetComponent<Structures>().health--;
 
+            if (col.gameObject.GetComponent<Structures>().health == 1)
+            {
+                col.gameObject.GetComponent<SpriteRenderer>().sprite = col.gameObject.GetComponent<Structures>().sprite;
+            }
+
             if (col.gameObject.GetComponent<Structures>().health <= 0)
             {
                 Destroy(col.gameObject);

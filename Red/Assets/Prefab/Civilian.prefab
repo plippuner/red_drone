@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50905069729717284}
   - component: {fileID: 95212941945966612}
   - component: {fileID: 70033408234484172}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Civilian
   m_TagString: Civilian
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 4569365617404000}
   - component: {fileID: 212906370436911788}
   - component: {fileID: 114453391570617646}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,9 +183,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 796755691
+  m_SortingLayer: 3
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: d247beb25ba36d24098b8faf0f48cf73, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -227,8 +227,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 796755691
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7d1eed1705380724ca30042dbd210470, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
