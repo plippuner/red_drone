@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour {
 
     void Awake()
     {
-        speed = 5f;
+        speed = 20f;
         isReady = false;
     }
 

@@ -589,7 +589,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1301414800}
-        m_MethodName: Levelloading
+        m_MethodName: Gameloading
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

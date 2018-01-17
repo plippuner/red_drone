@@ -16,7 +16,8 @@ public class Player : MonoBehaviour
     List<Vector3> pos = new List<Vector3>();
 
 
-
+    public int Killamount = 0;
+    public GameObject score;
 
     float PlayerPosXS = 0;
     float PlayerPosYS = 3;
@@ -61,7 +62,10 @@ public class Player : MonoBehaviour
 
     // Use this for initialization
     void Start()
+
     {
+
+
         DontDestroyOnLoad(gameObject);
 
 
@@ -73,8 +77,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Killamount = score.GetComponents<Scoring>().tValue;
 
-        if(Direction){
+        if (Direction){
 
             TrueVelocity += Velocity * Time.deltaTime/2;
 
@@ -111,7 +116,7 @@ public class Player : MonoBehaviour
 
 
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (/*Input.GetKeyDown(KeyCode.P)*/Killamount >= 2)
         {
 
             transform.position = new Vector3(PlayerPosXS, PlayerPosYS, 0);
@@ -123,7 +128,7 @@ public class Player : MonoBehaviour
             Playtime = 0;
             
             SpawndAtStart = false;
-            SceneManager.LoadScene("red");
+            SceneManager.LoadScene("Replay");
         }
 
         if (Recording)

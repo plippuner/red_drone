@@ -9,12 +9,12 @@ public class LoadLevel : MonoBehaviour {
 
  public void Recordloading()
     {
-        SceneManager.LoadScene("Aufnahme");
+        SceneManager.LoadScene("Replay");
     }
 
     public void Gameloading()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("red");
     }
 
     public void Scoreloading()
