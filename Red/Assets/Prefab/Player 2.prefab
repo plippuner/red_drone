@@ -57,7 +57,6 @@ GameObject:
   - component: {fileID: 212414349465367828}
   - component: {fileID: 114640570251606908}
   - component: {fileID: 82163924614769048}
-  - component: {fileID: 114082420535616986}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Player
@@ -176,19 +175,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114082420535616986
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1422231271422436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 498d12a75835061408b1379794c384b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tValue: 0
-  cValue: 0
 --- !u!114 &114192032214357508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -303,6 +289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edee843947205044c8de8c364b094970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Killamount: 0
+  score: {fileID: 0}
   Recording: 1
   Playtime: 0
   BSprite: {fileID: 1197013049747246, guid: 9dd2759c13f5add4a8db2e04ba764525, type: 2}

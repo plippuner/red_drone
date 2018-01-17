@@ -9,6 +9,7 @@ public class Terrorist : MonoBehaviour
 
     private Rigidbody2D rb2d;
     private GameObject player;
+
     public float spd;
     public int health;
     private int distance = 12;
@@ -32,6 +33,7 @@ public class Terrorist : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
+
 
         transform.Find("Canvas").GetComponent<Canvas>().enabled = false;
         // X = Left to Right
@@ -92,31 +94,32 @@ public class Terrorist : MonoBehaviour
 
 
 
-            // Flucht
-            if (d < 0 && d >= -distance)
-            {
-                gun.GetComponent<Shooting>().FireEnemyBullet();
-               // velocity.x = -spd;
-                GetComponent<SpriteRenderer>().flipX = false;
-            }
-            else if (d > 0 && d <= distance)
-            {
-                gun.GetComponent<Shooting>().FireEnemyBullet();
-               // velocity.x = spd;
-                GetComponent<SpriteRenderer>().flipX = true;
-            }
-            else
-            {
-               // velocity.x = 0;
-            }
+        // Flucht
+        if (d < 0 && d >= -distance)
+        {
+            gun.GetComponent<Shooting>().FireEnemyBullet();
+            // velocity.x = -spd;
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else if (d > 0 && d <= distance)
+        {
+            gun.GetComponent<Shooting>().FireEnemyBullet();
+            // velocity.x = spd;
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            // velocity.x = 0;
+        }
 
     }
 
-    private void OnDestroy()
+    void OnCollisionEnter2D(Collision2D col)
     {
+        if (col.gameObject.tag == "Destroy") { 
         if (player != null)
         {
             player.GetComponent<Scoring>().tValue++;
         }
-    }
+    } }
 }

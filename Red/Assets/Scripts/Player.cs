@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
 
 
     public int Killamount = 0;
-    public GameObject score;
+    
 
     float PlayerPosXS = 0;
     float PlayerPosYS = 3;
@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
     void Start()
 
     {
-
+        
 
         DontDestroyOnLoad(gameObject);
 
@@ -77,7 +77,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Killamount = score.GetComponents<Scoring>().tValue;
+        Debug.Log(Killamount);
+        Killamount = GetComponent<Scoring>().tValue;
 
         if (Direction){
 
@@ -116,18 +117,21 @@ public class Player : MonoBehaviour
 
 
 
-        if (/*Input.GetKeyDown(KeyCode.P)*/Killamount >= 2)
+        if (/*Input.GetKeyDown(KeyCode.P)*/Killamount >= 10)
         {
 
             transform.position = new Vector3(PlayerPosXS, PlayerPosYS, 0);
             TrueVelocity = 0;
-            saveAction.Add("fin");
-            saveTime.Add(Playtime);
+            //saveAction.Add("fin");
+            saveTime.Add(100);
             pos.Add(transform.position);
-            Recording = !Recording;
-            Playtime = 0;
             
-            SpawndAtStart = false;
+            Playtime = 0;
+            GetComponent<Scoring>().tValue = 0;
+            GetComponent<Scoring>().cValue = 0;
+            Killamount = 0;
+            Recording = false;
+            
             SceneManager.LoadScene("Replay");
         }
 
@@ -231,16 +235,23 @@ public class Player : MonoBehaviour
 
                 for (int i = 0; i < Maxlist; i++)
                 {
-                
 
 
-                  
-                
+                if (saveTime[i] == saveTime[100])
+                {
+                    Debug.Log("fin");
+                    SceneManager.LoadScene("Menu");
 
-                    if (saveTime[i] <= Playtime + 0.01f&& saveTime[i] >= Playtime - 0.01)
+
+
+                }
+
+
+
+                if (saveTime[i] <= Playtime + 0.01f && saveTime[i] >= Playtime - 0.01)
                     {
                         Debug.Log("Time");
-                    if (saveAction[i] == ("fin")) { Debug.Log("fin"); }
+                    
 
                     if (saveAction[i] == ("A"))
                         {

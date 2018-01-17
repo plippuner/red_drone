@@ -7,6 +7,7 @@ public class NPC : MonoBehaviour {
     float Health = 1;
     private Rigidbody2D rb2d;
     private GameObject player;
+    
     public float spd;
     public int health;
     private int distance = 12;
@@ -18,7 +19,7 @@ public class NPC : MonoBehaviour {
     void Start () {
         rb2d = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
-
+        
         anim = GetComponent<Animator>();
 
         // X = Left to Right
@@ -60,11 +61,14 @@ public class NPC : MonoBehaviour {
         }
     }
 
-    private void OnDestroy()
+    void OnCollisionEnter2D(Collision2D col)
     {
-        if (player != null)
+        if (col.gameObject.tag == "Destroy")
         {
-            player.GetComponent<Scoring>().cValue++;
+            if (player != null)
+            {
+                player.GetComponent<Scoring>().cValue++;
+            }
         }
     }
 }
