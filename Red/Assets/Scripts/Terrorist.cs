@@ -51,10 +51,6 @@ public class Terrorist : MonoBehaviour
         rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
         GameObject gun = transform.Find("EnemyGun").gameObject;
 
-
-            rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
-            GameObject gun = transform.Find("EnemyGun").gameObject;
-
         redText = transform.Find("Canvas/redText").GetComponent<Text>();
         blueText = transform.Find("Canvas/blueText").GetComponent<Text>();
 
