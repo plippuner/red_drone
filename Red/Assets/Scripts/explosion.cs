@@ -37,7 +37,7 @@ public class explosion : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        //player.GetComponent<AudioSource>().PlayOneShot(clip);
+        player.GetComponent<AudioSource>().PlayOneShot(clip);
 
         if (col.gameObject.tag == "Civilian")
         {

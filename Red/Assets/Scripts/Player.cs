@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 
 
@@ -13,7 +12,7 @@ public class Player : MonoBehaviour
 
      List<string> saveAction = new List<string>();
      List<float> saveTime = new List<float>();
-     List<Vector3> pos = new List<Vector3>();
+    List<Vector3> pos = new List<Vector3>();
 
 
 
@@ -24,7 +23,6 @@ public class Player : MonoBehaviour
 
     int CurrentAction = 0;
     public bool Recording = true;
-    public bool saveRec = true;
     public float Playtime = 0;
 
     float Playerspeed = 4;
@@ -60,10 +58,8 @@ public class Player : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
-   
 
-   
+
         //saveAction = new SaveAction[101];
         CurrentTime = MaxTime;
 
@@ -95,8 +91,8 @@ public class Player : MonoBehaviour
 
 
         if (Input.GetKeyDown(KeyCode.P))
-        { 
-            
+        {
+
             transform.position = new Vector3(PlayerPosXS, PlayerPosYS, 0);
             TrueVelocity = 0;
             saveAction.Add("None");
@@ -104,7 +100,6 @@ public class Player : MonoBehaviour
             pos.Add(transform.position);
             Recording = !Recording;
             Playtime = 0;
-            SceneManager.LoadScene("Pascal");
         }
 
         if (Recording)
@@ -200,9 +195,9 @@ public class Player : MonoBehaviour
         }
        if (!Recording)
             {
-            saveRec = false;
 
-            Debug.Log("Play");
+
+                Debug.Log("Play");
 
                 for (int i = 0; i < Maxlist; i++)
                 {
